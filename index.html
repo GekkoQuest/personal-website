@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>John Guerra | Personal Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="particles-container">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <header>
+    <nav>
+      <h1 class="logo-text">
+        <span class="logo-bracket">{</span>
+        John Guerra
+        <span class="logo-bracket">}</span>
+      </h1>
+      <ul>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><button class="resume-btn" onclick="openResume()">
+          <span class="btn-text">Resume</span>
+          <span class="btn-icon">→</span>
+        </button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" data-aos="fade-up">
+      <div class="hero-content">
+        <div class="terminal-window">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="terminal-title">~/john-guerra</div>
+          </div>
+          <div class="terminal-body">
+            <div class="loading-sequence">
+              <span class="loading-text">Loading...</span>
+              <span class="loading-cursor">_</span>
+            </div>
+            <div class="terminal-content" style="display: none;">
+              <div class="terminal-line">
+                <span class="prompt">$</span>
+                <span class="command">whoami</span>
+              </div>
+              <div class="terminal-output">Full Stack Developer</div>
+              <div class="terminal-line">
+                <span class="prompt">$</span>
+                <span class="command">cat passion.txt</span>
+              </div>
+              <div class="terminal-output">Writing code that matters, solving problems that count</div>
+              <div class="terminal-cursor">_</div>
+            </div>
+          </div>
+        </div>
+        <h2 class="hero-title">Hello, I'm <span class="name-highlight">John Guerra</span></h2>
+        <p class="hero-subtitle">Building secure, scalable applications that solve real problems</p>
+      </div>
+      
+      <div class="floating-code">
+        <div class="code-snippet" data-language="java">@RestController</div>
+        <div class="code-snippet" data-language="java">public class Developer {</div>
+        <div class="code-snippet" data-language="java">private final Service service;</div>
+        <div class="code-snippet" data-language="java">Optional&lt;String&gt; result;</div>
+        <div class="code-snippet" data-language="java">Stream.of(projects)</div>
+        <div class="code-snippet" data-language="java">@Entity @Table</div>
+      </div>
+    </section>
+
+    <section id="about" data-aos="fade-up">
+      <h3 class="section-title">
+        <span class="title-number">01.</span>
+        About Me
+        <div class="title-line"></div>
+      </h3>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            I'm a full stack software engineer focused on building responsive web applications and scalable backend systems. 
+            I enjoy solving complex problems, learning new technologies, and creating secure, production-ready applications that people find useful.
+          </p>
+          <div class="tech-stack">
+            <h4>Technologies I work with:</h4>
+            <div class="tech-grid">
+              <span class="tech-item">Java</span>
+              <span class="tech-item">Spring Boot</span>
+              <span class="tech-item">JavaScript</span>
+              <span class="tech-item">Python</span>
+              <span class="tech-item">Docker</span>
+              <span class="tech-item">MongoDB</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="code-editor">
+            <div class="editor-header">
+              <div class="editor-tabs">
+                <div class="tab active">Developer.java</div>
+              </div>
+            </div>
+            <div class="editor-body">
+              <div class="code-line">
+                <span class="line-number">1</span>
+                <span class="code-text">
+                  <span class="keyword">@Getter</span>
+                </span>
+              </div>
+              <div class="code-line">
+                <span class="line-number">2</span>
+                <span class="code-text">
+                  <span class="keyword">@RequiredArgsConstructor</span>
+                </span>
+              </div>
+              <div class="code-line">
+                <span class="line-number">3</span>
+                <span class="code-text">
+                  <span class="keyword">public class</span> 
+                  <span class="variable">Developer</span> {
+                </span>
+              </div>
+              <div class="code-line">
+                <span class="line-number">4</span>
+                <span class="code-text">
+                  &nbsp;&nbsp;<span class="keyword">private final</span> <span class="variable">String</span> <span class="property">name</span> = 
+                  <span class="string">"John Guerra"</span>;
+                </span>
+              </div>
+              <div class="code-line">
+                <span class="line-number">5</span>
+                <span class="code-text">
+                  &nbsp;&nbsp;<span class="keyword">private final</span> <span class="variable">String</span> <span class="property">role</span> = 
+                  <span class="string">"Full Stack Engineer"</span>;
+                </span>
+              </div>
+              <div class="code-line">
+                <span class="line-number">6</span>
+                <span class="code-text">
+                  &nbsp;&nbsp;<span class="keyword">private final</span> <span class="variable">int</span> <span class="property">experience</span> = 
+                  <span class="number">2</span>;
+                </span>
+              </div>
+              <div class="code-line">
+                <span class="line-number">7</span>
+                <span class="code-text">}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" data-aos="fade-up">
+      <h3 class="section-title">
+        <span class="title-number">02.</span>
+        Projects
+        <div class="title-line"></div>
+      </h3>
+      <div class="project-list">
+        <div class="project featured-project" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-number">01</div>
+          <h4>Wallet - Zero-Knowledge Password Manager</h4>
+          <div class="project-links">
+            <a href="https://wallet.gekko.quest" class="project-link" target="_blank">
+              <span>Live Demo</span>
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+                <path d="M3.5 3C3.22386 3 3 3.22386 3 3.5C3 3.77614 3.22386 4 3.5 4H7.29289L3.14645 8.14645C2.95118 8.34171 2.95118 8.65829 3.14645 8.85355C3.34171 9.04882 3.65829 9.04882 3.85355 8.85355L8 4.70711V8.5C8 8.77614 8.22386 9 8.5 9C8.77614 9 9 8.77614 9 8.5V3.5C9 3.22386 8.77614 3 8.5 3H3.5Z"/>
+              </svg>
+            </a>
+            <a href="https://github.com/GekkoQuest/wallet/" class="project-link" target="_blank">
+              <span>GitHub</span>
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+                <path d="M3.5 3C3.22386 3 3 3.22386 3 3.5C3 3.77614 3.22386 4 3.5 4H7.29289L3.14645 8.14645C2.95118 8.34171 2.95118 8.65829 3.14645 8.85355C3.34171 9.04882 3.65829 9.04882 3.85355 8.85355L8 4.70711V8.5C8 8.77614 8.22386 9 8.5 9C8.77614 9 9 8.77614 9 8.5V3.5C9 3.22386 8.77614 3 8.5 3H3.5Z"/>
+              </svg>
+            </a>
+          </div>
+          <p>Built a zero-knowledge password manager using AES-GCM encryption and PBKDF2 key derivation, ensuring all sensitive data is encrypted in the browser before being sent to the server. Features secure passwordless login with email-based authentication, rate limiting, and session management.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">Spring Boot</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">Docker</span>
+          </div>
+        </div>
+        
+        <div class="project" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-number">02</div>
+          <h4>SpikeTracker - Valorant Esports Tracker</h4>
+          <div class="project-links">
+            <a href="https://spike.gekko.quest" class="project-link" target="_blank">
+              <span>Live Demo</span>
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+                <path d="M3.5 3C3.22386 3 3 3.22386 3 3.5C3 3.77614 3.22386 4 3.5 4H7.29289L3.14645 8.14645C2.95118 8.34171 2.95118 8.65829 3.14645 8.85355C3.34171 9.04882 3.65829 9.04882 3.85355 8.85355L8 4.70711V8.5C8 8.77614 8.22386 9 8.5 9C8.77614 9 9 8.77614 9 8.5V3.5C9 3.22386 8.77614 3 8.5 3H3.5Z"/>
+              </svg>
+            </a>
+            <a href="https://github.com/GekkoQuest/spike-tracker/" class="project-link" target="_blank">
+              <span>GitHub</span>
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+                <path d="M3.5 3C3.22386 3 3 3.22386 3 3.5C3 3.77614 3.22386 4 3.5 4H7.29289L3.14645 8.14645C2.95118 8.34171 2.95118 8.65829 3.14645 8.85355C3.34171 9.04882 3.65829 9.04882 3.85355 8.85355L8 4.70711V8.5C8 8.77614 8.22386 9 8.5 9C8.77614 9 9 8.77614 9 8.5V3.5C9 3.22386 8.77614 3 8.5 3H3.5Z"/>
+              </svg>
+            </a>
+          </div>
+          <p>Built a real-time Valorant match tracker using Spring Boot 3.2 and the VLR.gg API. Features responsive web interface and Discord bot integration with JDA 5.x for automated match updates and score notifications. Fully containerized with Docker.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">Spring Boot</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">Docker</span>
+            <span class="tech-tag">AWS</span>
+          </div>
+        </div>
+        
+        <div class="project" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-number">03</div>
+          <h4>Dragonball Online Global - Volunteer</h4>
+          <div class="project-links">
+            <a href="https://dboglobal.to" class="project-link" target="_blank">
+              <span>View Game</span>
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+                <path d="M3.5 3C3.22386 3 3 3.22386 3 3.5C3 3.77614 3.22386 4 3.5 4H7.29289L3.14645 8.14645C2.95118 8.34171 2.95118 8.65829 3.14645 8.85355C3.34171 9.04882 3.65829 9.04882 3.85355 8.85355L8 4.70711V8.5C8 8.77614 8.22386 9 8.5 9C8.77614 9 9 8.77614 9 8.5V3.5C9 3.22386 8.77614 3 8.5 3H3.5Z"/>
+              </svg>
+            </a>
+          </div>
+          <p>Contributed weekly patches addressing bugs and gameplay improvements. Resolved critical memory leaks in the asset loader and developed server-side anti-cheat features. Helped increase player satisfaction by ~40% and contributed to a 15% rise in active player count.</p>
+          <div class="project-tech">
+            <span class="tech-tag">C++</span>
+            <span class="tech-tag">C#</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" data-aos="fade-up">
+      <h3 class="section-title">
+        <span class="title-number">03.</span>
+        Get In Touch
+        <div class="title-line"></div>
+      </h3>
+      <div class="contact-content">
+        <p class="contact-intro">
+          I'm always open to discussing new opportunities, interesting projects, 
+          or just having a chat about technology. Feel free to reach out!
+        </p>
+        
+        <div class="contact-terminal">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="terminal-title">~/contact-info</div>
+          </div>
+          <div class="terminal-body">
+            <div class="contact-line">
+              <span class="contact-prompt">$</span>
+              <span class="contact-command">cat email.txt</span>
+            </div>
+            <div class="contact-output">
+              <a href="mailto:john@gekko.quest" class="contact-link">john@gekko.quest</a>
+            </div>
+            
+            <div class="contact-line">
+              <span class="contact-prompt">$</span>
+              <span class="contact-command">open linkedin</span>
+            </div>
+            <div class="contact-output">
+              <a href="https://www.linkedin.com/in/john-guerra20/" target="_blank" class="contact-link">
+                linkedin.com/in/john-guerra20
+              </a>
+            </div>
+            
+            <div class="contact-line">
+              <span class="contact-prompt">$</span>
+              <span class="contact-command">git remote -v</span>
+            </div>
+            <div class="contact-output">
+              <a href="https://github.com/GekkoQuest" target="_blank" class="contact-link">
+                github.com/GekkoQuest
+              </a>
+            </div>
+            
+            <div class="contact-line">
+              <span class="contact-prompt">$</span>
+              <span class="contact-cursor">_</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-cta">
+          <p>Ready to build something amazing together?</p>
+          <a href="mailto:john@gekko.quest" class="cta-button">
+            <span>Let's Connect</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+              <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 John Guerra</p>
+      <div class="footer-links">
+        <a href="#hero" class="footer-link">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="resumeModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeResume()">&times;</span>
+      <iframe src="files/resume.pdf#zoom=100" width="100%" height="100%" title="Resume PDF"></iframe>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
